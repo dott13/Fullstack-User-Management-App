@@ -69,7 +69,7 @@ def delete_contact(email):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
     
-    return jsonify({'message': 'Contact deleted successfully!'})
+    return jsonify({'message': 'Contact deleted successfully!'}), 200
 
 
 if __name__ == "__main__":
